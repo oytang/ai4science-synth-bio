@@ -5,7 +5,8 @@
 - `reac_prop.tsv`包含大量生化代谢反应，其中涉及的所有化合物**均可视为bioreachable**
 - 但这个数据集并不全（由于论文遗漏或未发现），也即**未出现在此数据集中的化合物也有可能bioreachable**
 - 可能可以找一些其他的比如酶促反应之类的数据
-- `reac_prop.tsv`里每条反应中，每种化合物（代谢物）以[MNX_ID](https://www.metanetx.org/mnxdoc/mnxref.html#MNX_ID)形式表示，需求配合`chem_prop.tsv`文件将MNX_ID转化为[InChIKey](https://en.wikipedia.org/wiki/International_Chemical_Identifier)作为每一个化合物的identifier
+- `reac_prop.tsv`里每条反应中，每种化合物（代谢物）以[MNX_ID](https://www.metanetx.org/mnxdoc/mnxref.html#MNX_ID)形式表示（例如MNXM01@MNXD1），需求配合`chem_prop.tsv`文件将MNX_ID转化为[InChIKey](https://en.wikipedia.org/wiki/International_Chemical_Identifier)作为每一个化合物的identifier
+- 对于MNXM01@MNXD1这个例子，@字符之前的MNXM01是某种化合物的ID，而@字符之后的是其所处的 [generic compartment](https://en.wikipedia.org/wiki/Cellular_compartment)（比如不同的细胞器等等），这个部分对于我们这个项目并不重要，可以忽略，只考虑@之前的MNXM01即可
 - InChIKey可以进一步通过[RDKit](https://www.rdkit.org/)转化为任意化学信息学表示，例如SMILES等
 - 数据案例可以在`mnx_data_structure.ipynb`中直观看到
 
