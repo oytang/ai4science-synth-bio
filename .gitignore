@@ -1,6 +1,11 @@
-# large dataset files
+# large raw dataset files
 reac_prop.tsv
+reac_clean.csv
 chem_prop.tsv
 
 # archived files
 inchiFromSmiles.py
+
+# intermediate files
+mnx_chem_bioreachable_name2SMILES.csv
+mnx_chem_bioreachable_name2SMILES_and_InChI.csv
