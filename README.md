@@ -1,4 +1,8 @@
-# ai4science-synth-bio
+# Team - BioXsynth
+
+<a href="url"><img src="BioXsynth-logos.jpeg" align="left" height="150" width="150" ></a>
+
+An integrated framework for molecular bioreachability prediction. This is a structured solution for the Synthetic Biology Challenge of [ai4science hackathon](https://ai4science.io/), organized by [DeepVerse](deepverse.tech/en/), [Bota Bio](www.bota.bio), [Chemical.AI](https://chemical.ai/) and [Foreseen Biotechnology](www.foreseepharma.com/en-us).
 
 ## 生物可合成性模型打分结果
 
