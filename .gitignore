@@ -5,6 +5,7 @@ chem_prop.tsv
 
 # archived directory
 .archive/*
+.idea
 
 # intermediate files
 mnx_chem_bioreachable_name2SMILES.csv
