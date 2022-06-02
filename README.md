@@ -4,6 +4,15 @@
 
 An integrated framework for molecular bioreachability prediction. This is a structured solution for the Synthetic Biology Challenge of [ai4science hackathon](https://ai4science.io/), organized by [DeepVerse](deepverse.tech/en/), [Bota Bio](www.bota.bio), [Chemical.AI](https://chemical.ai/) and [Foreseen Biotechnology](www.foreseepharma.com/en-us).
 
+## Project Highlights
+
+The assessment of whether a given molecule can be made purely by biosynthesis is vital in starting a specific synthesis project, but it can be complicated and there is hardly any established model for this task. We designed a classification model which can classify a given molecule into two categories, bio-reachable and not bio-reachable, based on a two-step scoring system: (1) a molecular fingerprint similarity measure, and (2) a retrosynthetic-based accessibility score [RAscore](https://github.com/reymond-group/RAscore). We illustrated the explorative classification results of our model on the [MetaNetX](https://github.com/Chemino/ai4science-synth-bio/blob/main/mnx_chem_bioreachable.csv) and [PubChem BioCyc](https://github.com/Chemino/ai4science-synth-bio/blob/main/mnx_chem_bioreachable_PubChemBioCyc.csv) dataset. 
+
+## 项目亮点
+
+评估一个给定的分子是否可以纯粹通过生物合成来制造，对开始一个具体的合成项目至关重要，但这个评估过程可能很复杂，而且几乎没有任何成熟的模型来完成这项任务。我们设计了一个分类模型，该模型可以将一个给定的分子分为两类，即生物可到达的和生物不可到达的，基于一个两步的评分系统：（1）分子指纹相似性测量，和（2）基于逆合成分析的可及性评分[RAscore](https://github.com/reymond-group/RAscore)。我们在[MetaNetX](https://github.com/Chemino/ai4science-synth-bio/blob/main/mnx_chem_bioreachable.csv)和[PubChem BioCyc](https://github.com/Chemino/ai4science-synth-bio/blob/main/mnx_chem_bioreachable_PubChemBioCyc.csv)数据集上展示了我们设计的模型的探索性分类结果。
+
+
 ## 生物可合成性模型打分结果
 
 ![](RAscore-model/%E7%94%9F%E7%89%A9%E5%8F%AF%E5%90%88%E6%88%90%E5%8F%AF%E8%A7%86%E5%9B%BE.png)
