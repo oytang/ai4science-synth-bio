@@ -27,9 +27,16 @@ The assessment of whether a given molecule can be made purely by biosynthesis is
 - InChIKey可以进一步通过[RDKit](https://www.rdkit.org/)转化为任意化学信息学表示，例如SMILES等
 - 数据案例可以在`mnx_data_structure.ipynb`中直观看到
 
-## 参考工作：
+## Outlook
 
-[RAscore](https://github.com/reymond-group/RAscore) - Retrosynthetic Accessibility score
+- **Data-wise**
+  - To include **more comprehensive bio-reachable molecular dataset** (*e.g.* KEGG, ATLASx, *etc.*), to cover as large portion of bio-reachable chemical space as possible.
+  - Could we design a systematic approach to **generate negative samples (not bio-reachable molecules)**? This can give us equally labeled dataset to train classification models.
+- **Model-wise**
+  - **Molecular-based modeling**: Similar to estabilished work in estimation of synthetic accessibility (with bench chemical syntheticreactions) of molecules, use features such as molecular complexity and fragment contributions to estimate the probability of bio-reachability.
+  - **Retrosynthesis-based modeling**: To determine if we could find a biosynthetic path of the given molecule from a set of known bio-reachable molecules.
+  - A mix of both.
+
 
 > ## 赛题：给定的分子可以被生物合成吗？
 > ### 背景:
